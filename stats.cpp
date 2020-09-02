@@ -11,10 +11,13 @@ declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
 	    if(mystats[i] > max){
 		    max = mystats[i];
 	    }
+ }
+	
+    for(int j=1; j<n; j++){
 	    if(mystats[i] < min){
-		    min = mystats[i];
+              min = mystats[i];
 	    }
-    }
+}
     ds.max = mystats[n-1];
     ds.min = mystats[0];
     ds.average= sum/n;
