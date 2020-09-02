@@ -1,8 +1,8 @@
 #include "stats.h"
 
-computedStats ds;
+declareStats ds;
 
-computedStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
+declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     int n = mystats.size();
     int sum = mystats[0];
 	
