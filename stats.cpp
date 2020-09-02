@@ -1,4 +1,5 @@
 #include "stats.h"
+#include<algorithm>
 
 declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     int n = mystats.size();
