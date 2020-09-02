@@ -1,7 +1,6 @@
 #include "stats.h"
 
-Stats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
-    Stats cs;
+ds Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     int n = mystats.size();
     int sum = mystats[0];
 	
@@ -10,8 +9,8 @@ Stats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     for(int i = 0; i < n; i++){
         sum = sum + mystats[i];
     }
-    cs.max = mystats[n-1];
-    cs.min = mystats[0];
-    cs.average= sum/n;
-    return cs;
+    ds.max = mystats[n-1];
+    ds.min = mystats[0];
+    ds.average= sum/n;
+    return ds;
 }
