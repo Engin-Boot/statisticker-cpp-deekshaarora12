@@ -1,10 +1,10 @@
 #include <vector>
 
 namespace Statistics {
-    struct declareStats{
+    struct computedStats{
        float average;
        float max;
        float min;
     }; 
-   declareStats ComputeStatistics(const std::vector<float> &mystats);
+   computedStats ComputeStatistics(const std::vector<float> &mystats);
 }
