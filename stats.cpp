@@ -1,14 +1,19 @@
 #include "stats.h"
-#include<algorithm>
 
 declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     int n = mystats.size();
-    int sum = mystats[0];
+    float sum = mystats[0];
+    float max = mystats[0];
+    float min = mystats[0];
 	
-    std::sort(mystats.begin(), mystats.end()); 
-    
-    for(int i = 0; i < n; i++){
+    for(int i = 1; i < n; i++){
         sum = sum + mystats[i];
+	    if(mystats[i] > max){
+		    max = mystats[i];
+	    }
+	    if(mystats[i] < min){
+		    min = mystats[i];
+	    }
     }
     ds.max = mystats[n-1];
     ds.min = mystats[0];
