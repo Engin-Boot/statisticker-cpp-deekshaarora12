@@ -4,7 +4,7 @@ declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     int n = mystats.size();
     int sum = mystats[0];
 	
-    sort(mystats.begin(), mystats.end()); 
+    std::sort(mystats.begin(), mystats.end()); 
     
     for(int i = 0; i < n; i++){
         sum = sum + mystats[i];
