@@ -6,5 +6,6 @@ namespace Statistics {
        float max;
        float min;
     }; 
+   declareStats ds;
    declareStats ComputeStatistics(const std::vector<float> &mystats);
 }
