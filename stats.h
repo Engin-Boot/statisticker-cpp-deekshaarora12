@@ -1,5 +1,10 @@
 #include <vector>
 
 namespace Statistics {
-    Stats ComputeStatistics(const std::vector<___>& );
+    struct computedStats{
+       float average;
+       float max;
+       float min;
+    };
+    Stats ComputeStatistics(const std::vector<float>& );
 }
