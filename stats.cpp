@@ -11,14 +11,14 @@ Stats Statistics::ComputeStatistics(const std::vector<float> &mystats ) {
 		{
 			if (mystats[j + 1] < mystats[j])				
 			{
-				temp = data[j];								
-				data[j] = data[j + 1];
-				data[j + 1] = temp;
+				temp = mystats[j];								
+				mystats[j] = mystats[j + 1];
+				mystats[j + 1] = temp;
 			}
 		}
     }
     cs.max = mystats[n-1];
     cs.min = mystats[0];
-    cs.average= cs.average/n;
+    cs.average= sum/n;
     return cs;
 }
