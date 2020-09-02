@@ -14,8 +14,8 @@ declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
  }
 	
     for(int j=1; j<n; j++){
-	    if(mystats[i] < min){
-              min = mystats[i];
+	    if(mystats[j] < min){
+              min = mystats[j];
 	    }
 }
     ds.max = mystats[n-1];
