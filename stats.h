@@ -1,11 +1,12 @@
 #include <vector>
 
-namespace Statistics {
-    struct declareStats{
+struct declareStats{
        float average;
        float max;
        float min;
-    }; 
-   declareStats ds;
+    };  
+declareStats ds;
+
+namespace Statistics {
    declareStats ComputeStatistics(const std::vector<float> &mystats);
 }
