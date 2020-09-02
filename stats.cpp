@@ -1,7 +1,5 @@
 #include "stats.h"
 
-declareStats ds;
-
 declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     int n = mystats.size();
     int sum = mystats[0];
