@@ -2,6 +2,7 @@
 #include <bits/stdc++.h> 
 
  Statistics::declareStats ComputeStatistics(const std::vector<float> &mystats) {
+    Statistics::ds;
     int n = mystats.size();
     float sum = mystats[0];
 	
@@ -11,8 +12,8 @@
     for(int i = 1; i < n; i++){
         sum = sum + mystats[i];
  }
-    Statistics::ds.max = max_ele;
-    Statistics::ds.min = min_ele;
-    Statistics::ds.average= sum/n;
-    return Statistics::ds;
+    ds.max = max_ele;
+    ds.min = min_ele;
+    ds.average= sum/n;
+    return ds;
 }
