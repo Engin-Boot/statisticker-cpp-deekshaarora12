@@ -4,16 +4,13 @@
  Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     Statistics::declareStats ds;
     int n = mystats.size();
-    float sum = mystats[0];
 	
    auto max_ele = *max_element(std::begin(mystats), std::end(mystats));
    auto min_ele = *min_element(std::begin(mystats), std::end(mystats));
+   auto  avg = accumulate(std::begin(mystats), std::end(mystats), 0.0) / n; 
 	
-    for(int i = 1; i < n; i++){
-        sum = sum + mystats[i];
- }
     ds.max = max_ele;
     ds.min = min_ele;
-    ds.average= sum/n;
+    ds.average= avg;
     return ds;
 }
