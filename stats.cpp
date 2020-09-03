@@ -8,6 +8,7 @@ declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     }; invalidstruct is;
 	if(is == ds)
 	{
+	   return is;
 	}
     int n = mystats.size();
     float sum = mystats[0];
