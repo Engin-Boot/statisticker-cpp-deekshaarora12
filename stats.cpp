@@ -8,7 +8,6 @@ using namespace Statistics;
     float sum = 0.0;
     int n = mystats.size();
 	 
-   if(mystats.size()!=0){	
    auto max_ele = *max_element(std::begin(mystats), std::end(mystats));
    auto min_ele = *min_element(std::begin(mystats), std::end(mystats));
    auto  avg = accumulate(std::begin(mystats), std::end(mystats),sum) / n; 
@@ -17,7 +16,6 @@ using namespace Statistics;
     ds.max = max_ele;
     ds.min = min_ele;
     ds.average = avg;
-    return ds;
-}	 
+ 	 
     return ds;
 }
