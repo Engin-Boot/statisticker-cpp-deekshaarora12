@@ -1,5 +1,5 @@
 #include <vector>
-#include<math.h>
+#include <bits/stdc++.h> 
 
 namespace Statistics {
        
