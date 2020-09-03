@@ -5,7 +5,7 @@ using namespace Statistics;
 
  declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     Statistics::declareStats ds;
-    float sum = 0.0;
+    float sum = std::numeric_limits<float>::quiet_NaN();
     int n = mystats.size();
 	
    auto max_ele = *max_element(std::begin(mystats), std::end(mystats));
