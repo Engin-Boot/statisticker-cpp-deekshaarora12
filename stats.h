@@ -15,5 +15,5 @@ namespace Statistics {
        }
 };  
    extern struct declareStats ds;
-   declareStats ComputeStatistics(const std::vector<float>&);
+   declareStats ComputeStatistics(const std::vector<float>& );
 }
