@@ -1,7 +1,7 @@
 #include "stats.h"
 #include <bits/stdc++.h> 
 
- Statistics::ComputeStatistics(const std::vector<float> &mystats) {
+ declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     Statistics::declareStats ds;
     int n = mystats.size();
 	
