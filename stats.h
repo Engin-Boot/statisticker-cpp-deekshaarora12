@@ -11,9 +11,8 @@ struct declareStats{
           max     = std::numeric_limits<float>::quiet_NaN();
           min     = std::numeric_limits<float>::quiet_NaN();
        }
-};  
-   extern struct declareStats ds;
-
+};
 namespace Statistics {
+   extern struct declareStats ds;
    struct declareStats ComputeStatistics(const std::vector<float>& );
 }
