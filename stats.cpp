@@ -2,7 +2,7 @@
 #include <bits/stdc++.h> 
 
  Statistics::declareStats ComputeStatistics(const std::vector<float> &mystats) {
-    Statistics::ds;
+    Statistics::declareStats ds;
     int n = mystats.size();
     float sum = mystats[0];
 	
