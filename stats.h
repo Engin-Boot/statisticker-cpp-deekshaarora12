@@ -5,9 +5,14 @@
 namespace Statistics {
        
  struct declareStats{
-    float average = std::numeric_limits<float>::quiet_NaN();
-    float max = std::numeric_limits<float>::quiet_NaN();
-    float min = std::numeric_limits<float>::quiet_NaN();
+    float average;
+    float max;
+    float min;
+       declareStats(){
+          average = std::numeric_limits<float>::quiet_NaN();
+          max = std::numeric_limits<float>::quiet_NaN();
+          min = std::numeric_limits<float>::quiet_NaN();
+       }
 };  
    extern struct declareStats ds;
    declareStats ComputeStatistics(const std::vector<float> &mystats);
