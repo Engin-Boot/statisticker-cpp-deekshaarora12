@@ -1,6 +1,5 @@
 #include "stats.h"
 #include <bits/stdc++.h> 
-using namespace Statistics; 
 
  declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
    Statistics::declareStats ds;
