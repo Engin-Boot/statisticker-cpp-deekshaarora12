@@ -3,7 +3,7 @@
 using namespace Statistics; 
 
  declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
-    Statistics::declareStats ds = {NaN;NaN;NaN};
+    Statistics::declareStats ds;
     int n = mystats.size();
 	
    auto max_ele = *max_element(std::begin(mystats), std::end(mystats));
