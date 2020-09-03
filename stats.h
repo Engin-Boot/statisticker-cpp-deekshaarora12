@@ -5,7 +5,7 @@ struct declareStats{
        float max;
        float min;
     };  
-declareStats ds;
+extern declareStats ds;
 
 namespace Statistics {
    declareStats ComputeStatistics(const std::vector<float>&);
