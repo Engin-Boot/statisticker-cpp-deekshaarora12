@@ -7,6 +7,6 @@ namespace Statistics {
     float max;
     float min;
 };  
-   extern declareStats ds;
+   extern struct declareStats ds;
    declareStats ComputeStatistics(const std::vector<float> &mystats);
 }
