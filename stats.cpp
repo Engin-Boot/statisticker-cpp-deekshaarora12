@@ -14,10 +14,12 @@ using namespace Statistics;
     for(auto& it : mystats){
 	   sum = sum + it;
 }
-	
+    
+f(mystats.size()!=0){
     ds.max = max_ele;
     ds.min = min_ele;
     ds.average = avg;
+}
 	 
     return ds;
 }
