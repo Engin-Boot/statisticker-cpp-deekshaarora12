@@ -8,5 +8,5 @@ struct declareStats{
 declareStats ds;
 
 namespace Statistics {
-   declareStats ComputeStatistics(const std::vector<float> &mystats);
+   declareStats ComputeStatistics(const std::vector<float>&);
 }
