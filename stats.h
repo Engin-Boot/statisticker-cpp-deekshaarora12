@@ -8,5 +8,5 @@ namespace Statistics {
     float min;
 };  
    extern declareStats ds;
-   declareStats ComputeStatistics(const std::vector<float>&);
+   extern declareStats ComputeStatistics(const std::vector<float>&);
 }
