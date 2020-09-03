@@ -5,14 +5,15 @@ using namespace Statistics;
 
  declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     Statistics::declareStats ds;
-    float sum = 0;
+    float sum = 0.0;
     int n = mystats.size();
-	
+	 
+   if(mystats.size()!=0){	
    auto max_ele = *max_element(std::begin(mystats), std::end(mystats));
    auto min_ele = *min_element(std::begin(mystats), std::end(mystats));
    auto  avg = accumulate(std::begin(mystats), std::end(mystats),sum) / n; 
     
-if(mystats.size()!=0){
+
     ds.max = max_ele;
     ds.min = min_ele;
     ds.average = avg;
