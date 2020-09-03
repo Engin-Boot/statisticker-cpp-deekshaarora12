@@ -4,8 +4,6 @@
 declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     int n = mystats.size();
     float sum = mystats[0];
-    float max = mystats[0];
-    float min = mystats[0];
 	
    std::sort(mystats.begin(),mystats.end());
 	
