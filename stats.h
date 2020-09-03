@@ -9,9 +9,9 @@ namespace Statistics {
     float max;
     float min;
        declareStats(){
-          average = std::numeric_limits<float>::quiet_NaN();
-          max = std::numeric_limits<float>::quiet_NaN();
-          min = std::numeric_limits<float>::quiet_NaN();
+          average = numeric_limits<float>::quiet_NaN();
+          max = numeric_limits<float>::quiet_NaN();
+          min = numeric_limits<float>::quiet_NaN();
        }
 };  
    extern struct declareStats ds;
