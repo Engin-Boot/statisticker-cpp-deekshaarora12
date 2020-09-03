@@ -2,7 +2,7 @@
 #include <bits/stdc++.h> 
 using namespace Statistics; 
 
-
+namespace Statistics{
  declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
     Statistics::declareStats ds;
     float sum = 0.0;
@@ -18,4 +18,5 @@ using namespace Statistics;
     ds.average = avg;
  	 
     return ds;
+}
 }
