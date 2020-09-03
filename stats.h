@@ -2,9 +2,7 @@
 #include <bits/stdc++.h> 
 #include<numeric>
 
-namespace Statistics {
-       
- struct declareStats{
+struct declareStats{
     float average;
     float max;
     float min;
@@ -15,5 +13,7 @@ namespace Statistics {
        }
 };  
    extern struct declareStats ds;
+
+namespace Statistics {
    declareStats ComputeStatistics(const std::vector<float>& );
 }
