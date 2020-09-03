@@ -12,7 +12,7 @@ using namespace Statistics;
    auto min_ele = *min_element(std::begin(mystats), std::end(mystats));
    //auto  avg = accumulate(std::begin(mystats), std::end(mystats),0.0) / n; 
     for(int i=0;i<n;i++){
-	sum = sum + mysize[i];
+	sum = sum + mystats[i];
 }
 	
     ds.max = max_ele;
