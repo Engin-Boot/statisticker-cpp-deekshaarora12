@@ -1,6 +1,8 @@
 #include "stats.h"
 #include <bits/stdc++.h> 
 
+struct declareStats;
+
  declareStats ComputeStatistics(const std::vector<float> &mystats) {
    Statistics::declareStats ds;
     float sum = 0.0;
