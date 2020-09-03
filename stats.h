@@ -14,6 +14,6 @@ namespace Statistics {
           min = std::numeric_limits<float>::quiet_NaN();
        }
 };  
-    struct declareStats ds;
+   extern struct declareStats ds;
    declareStats ComputeStatistics(const std::vector<float> &mystats);
 }
