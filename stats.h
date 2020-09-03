@@ -8,8 +8,8 @@ struct declareStats{
     float min;
        declareStats(){
           average = std::numeric_limits<float>::quiet_NaN();
-          max = std::numeric_limits<float>::quiet_NaN();
-          min = std::numeric_limits<float>::quiet_NaN();
+          max     = std::numeric_limits<float>::quiet_NaN();
+          min     = std::numeric_limits<float>::quiet_NaN();
        }
 };  
    extern struct declareStats ds;
