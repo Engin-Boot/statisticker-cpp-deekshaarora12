@@ -4,6 +4,7 @@
 namespace Statistics {
 
  struct declareStats ComputeStatistics(const std::vector<float> &mystats) {
+    struct declareStats ds;
     float sum = 0.0;
     int n = mystats.size();
 	 
