@@ -11,8 +11,8 @@
     for(int i = 1; i < n; i++){
         sum = sum + mystats[i];
  }
-    ds.max = max_ele;
-    ds.min = min_ele;
-    ds.average= sum/n;
-    return ds;
+    Statistics::ds.max = max_ele;
+    Statistics::ds.min = min_ele;
+    Statistics::ds.average= sum/n;
+    return Statistics::ds;
 }
