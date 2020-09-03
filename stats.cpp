@@ -3,7 +3,7 @@
 using namespace Statistics; 
 
  declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
-   declareStats ds;
+   Statistics::declareStats ds;
     float sum = 0.0;
     int n = mystats.size();
 	 
