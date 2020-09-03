@@ -10,16 +10,14 @@ using namespace Statistics;
 	
    auto max_ele = *max_element(std::begin(mystats), std::end(mystats));
    auto min_ele = *min_element(std::begin(mystats), std::end(mystats));
-   //auto  avg = accumulate(std::begin(mystats), std::end(mystats),0.0) / n; 
+   auto  avg = accumulate(std::begin(mystats), std::end(mystats),sum) / n; 
     for(auto& it : mystats){
 	   sum = sum + it;
 }
 	
     ds.max = max_ele;
     ds.min = min_ele;
-	 
-    if(mystats.size()!=0)
-    ds.average= sum/n;
+    ds.average = avg;
 	 
     return ds;
 }
