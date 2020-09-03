@@ -1,15 +1,6 @@
 #include "stats.h"
 
 declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
-    struct invalidstruct{
-	Nan;
-	Nan;
-	Nan;    
-    }; invalidstruct is;
-	if(is == ds)
-	{
-	   return is;
-	}
     int n = mystats.size();
     float sum = mystats[0];
     float max = mystats[0];
