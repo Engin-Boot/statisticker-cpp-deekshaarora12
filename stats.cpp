@@ -2,16 +2,8 @@
 #include <bits/stdc++.h> 
 using namespace Statistics; 
 
-struct invalidstruct{
-	NaN;
-	NaN;
-	NaN;	
-}; struct invalidstruct is;
 
  declareStats Statistics::ComputeStatistics(const std::vector<float> &mystats) {
-   if(mystats.size()==0){
-           return is;
-   }
     Statistics::declareStats ds;
     int n = mystats.size();
 	
